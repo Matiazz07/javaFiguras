@@ -1,25 +1,22 @@
 package com.krakedev.Rectangulo;
 
 public class Cuadrado {
-    private double lado;
+    private int lado;
 
-    public Cuadrado(double lado) {
+    // Métodos Getter y Setter
+    public int getLado() {
+        return lado;
+    }
+
+    public void setLado(int lado) {
         this.lado = lado;
     }
 
-    public double calcularArea() {
+    public int calcularArea() {
         return this.lado * this.lado;
     }
 
     public double calcularPerimetro() {
-        return this.lado * 4;
-    }
-
-    public double getLado() {
-        return lado;
-    }
-
-    public void setLado(double lado) {
-        this.lado = lado;
+        return 4 * this.lado;
     }
 }
